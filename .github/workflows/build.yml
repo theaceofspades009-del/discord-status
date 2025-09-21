@@ -21,7 +21,7 @@ jobs:
         run: dotnet publish Program.cs -c Release -r osx-arm64 --self-contained true
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: DiscordStatus-macOS
           path: bin/Release/net8.0/osx-arm64/publish/
